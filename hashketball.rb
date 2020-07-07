@@ -191,6 +191,7 @@ def big_shoe_rebounds
         shoes << player_x[:shoe]
         shoes.sort
         shoes.sort[-1]
+        binding.pry
     end
   end
 end
