@@ -193,4 +193,5 @@ def big_shoe_rebounds
   end
   shoes.sort
   shoes.sort[-1]
+  binding.pry
 end
