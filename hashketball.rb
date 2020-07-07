@@ -190,7 +190,7 @@ def big_shoe_rebounds
     info[:players].each do |player_x|
         shoes << player_x[:shoe]
         shoes.sort
-        return shoes.sort[-1]
+        shoes.sort[-1]
     end
   end
 end
