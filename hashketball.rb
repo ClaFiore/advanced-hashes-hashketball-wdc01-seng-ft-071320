@@ -191,10 +191,8 @@ def big_shoe_rebounds
         info[:players].each do |player_x|
           shoes << player_x[:shoe]
 
-
            shoes.sort
-           big = shoes.sort[-1] #19
-
+           big = shoes.sort[-1] #big = 19
 
            if player_x[:shoe] == big
            return player_x[:rebounds]
