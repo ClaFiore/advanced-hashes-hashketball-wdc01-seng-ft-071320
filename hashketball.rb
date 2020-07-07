@@ -195,10 +195,10 @@ def big_shoe_rebounds
            shoes.sort
            big = shoes.sort[-1] #19
 
-           player_x.each do |key, value|
-           if player_x[:value] == big
-           return key[:rebounds]
-           end
+
+           if player_x[:shoe] == big
+           return player_x[:rebounds]
+        
          end
    end
 end
