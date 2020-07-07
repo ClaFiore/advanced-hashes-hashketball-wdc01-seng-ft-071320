@@ -197,7 +197,7 @@ def big_shoe_rebounds
 
            player_x.each do |key, value|
            if player_x[:value] == big
-           return player_x[:rebounds]
+           return key[:rebounds]
            end
          end
    end
