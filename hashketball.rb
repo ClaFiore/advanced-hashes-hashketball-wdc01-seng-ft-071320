@@ -188,19 +188,17 @@ def big_shoe_rebounds
   shoes = []
   big = 0
   game_hash.each do |team, info|
-        info[:players].each do |player_x|
+          info[:players].each do |player_x|
           shoes << player_x[:shoe]
 
            shoes.sort
            big = shoes.sort[-1] #big = 19
-end
-info[:players].each do |player_x|
-           if player_x[:shoe] == big
-           return player_x[:rebounds]
-
-         end
-   end
-   binding.pry
+           end
+           info[:players].each do |player_x|
+             if player_x[:shoe] == big
+             return player_x[:rebounds]
+             end
+           end
 end
 
 end
