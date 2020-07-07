@@ -185,5 +185,13 @@ def player_stats(given_name)
 end
 
 def big_shoe_rebounds
-  
+  shoes = []
+  game_hash.each do |team, info|
+    info[:players].each do |player_x|
+        shoes << player_x[:shoe]
+        shoes.sort
+        return shoes.sort[-1]
+
+    end
+  end
 end
