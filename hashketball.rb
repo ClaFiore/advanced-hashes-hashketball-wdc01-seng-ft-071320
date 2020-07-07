@@ -189,9 +189,10 @@ def big_shoe_rebounds
   game_hash.each do |team, info|
     info[:players].each do |player_x|
         shoes << player_x[:shoe]
+        binding.pry
         shoes.sort
         shoes.sort[-1]
-        binding.pry
+        
     end
   end
 end
